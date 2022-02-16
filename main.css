@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(63,94,251,1) 15%, rgba(252,70,107,1) 100%);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+main label,input{
+    display: inline;
+    float: left;
+    border: 1px solid pink;
+}
