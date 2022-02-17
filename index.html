@@ -11,23 +11,124 @@
 </head>
 
 <body>
+    <header>
+        <h1>LengthConverter.net</h1>
+    </header>
     <div class="container">
-        <div>
-
-        </div>
-        <div class="bottom-container">
-            <h1>Length Converter</h1>
-            <p>Type a value in the Feet field to convert the value to Meters:</p>
+        <div class="top-container">
+            <h2>Length Converter</h2>
+            <p>Type a value in the unit of your field to convert the value to your other unit of choice:</p>
 
             <main>
-                <label for="firstValue">Feet: </label>
-                <input id="firstValue" type='number' onchange="convert()">
-              </button>
-                <br/>
-                <br/>
-                <label for="secondValue">Meters: </label>
-                <input id="secondValue" readonly>
+                <form>
+                    <input type="text" placeholder="Number" id="number" />
+                    <select id="type">
+                        <option value="drinks">Miles</option>
+                        <option value="bakery">Kilometers</option>
+                        <option value="canned">Meters</option>
+                        <option value="dairy" selected>Feet</option>
+                        <option value="frozen">Inches</option>
+                        <option value="meats">Centimeters</option>
+                        <option value="produce">Yards</option>
+                    </select>
+                    <button id="add">Convert</button>
+                </form>
             </main>
+        </div>
+        <div class="bottom-container">
+            <h2>Length Converter Chart</h2>
+            <div class="convert-chart">
+                <h3>Complete list of common length units for conversion</h3>
+                <div class="list">
+                    <table class="unit-table">
+                        <thead>
+                            <tr>
+                                <th>Unit Conversion</th>
+                                <th>Formula</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="" class="convert-item">cm to in</a></td>
+                                <td>cm / 2.54</td>
+                            </tr>
+                            <tr>
+                                <td><a href="" class="convert-item">mm to in</a></td>
+                                <td>mm * 0.039370</td>
+                            </tr>
+                            <tr>
+                                <td>m to ft</td>
+                                <td>m * 3.2808</td>
+                            </tr>
+                            <tr>
+                                <td>km to mi</td>
+                                <td>km * 0.62137</td>
+                            </tr>
+                            <tr>
+                                <td>cm to ft</td>
+                                <td>cm * 0.032808</td>
+                            </tr>
+                            <tr>
+                                <td>in to ft</td>
+                                <td>in * 0.083333</td>
+                            </tr>
+                            <tr>
+                                <td>m to yd</td>
+                                <td>m * 1.0936</td>
+                            </tr>
+                            <tr>
+                                <td>mm to cm</td>
+                                <td>m / 10</td>
+                            </tr>
+                            <tr>
+                                <td>cm to m</td>
+                                <td>m / 100</td>
+                            </tr>
+                            <tr>
+                                <td>cm to km</td>
+                                <td>cm / 100000</td>
+                            </tr>
+                            <tr>
+                                <td>mm to ft</td>
+                                <td>mm * 0.0032808</td>
+                            </tr>
+                            <tr>
+                                <td>m to mi</td>
+                                <td>m * 0.00062137</td>
+                            </tr>
+                            <tr>
+                                <td>ft to mi</td>
+                                <td>ft * 0.00018939</td>
+                            </tr>
+                            <tr>
+                                <td>yd to ft</td>
+                                <td>yd * 3</td>
+                            </tr>
+                            <tr>
+                                <td>in to m</td>
+                                <td>in / 39.370</td>
+                            </tr>
+                            <tr>
+                                <td>mm to m</td>
+                                <td>mm / 1000</td>
+                            </tr>
+                            <tr>
+                                <td>km to m</td>
+                                <td>km * 0.62137</td>
+                            </tr>
+                            <tr>
+                                <td>in to yd</td>
+                                <td>in * 0.027778</td>
+                            </tr>
+                            <tr>
+                                <td>yd to mi</td>
+                                <td>yd * 0.00056818</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
         </div>
     </div>
 
