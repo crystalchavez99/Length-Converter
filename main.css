@@ -28,6 +28,7 @@ header{
     flex-direction: column;
     height: 500px;
     color: black;
+    justify-content: center;
 }
 .bottom-container{
     display: flex;
@@ -39,31 +40,33 @@ header{
 main label,input{
     display: inline;
     float: left;
-    border: 1px solid pink;
 }
 
+
 main{
-    background-color: gray;
     display: block;
-    border: 1px solid black;
     padding: 0 70px;
-    margin-bottom: 86px;
+    margin: 50px;
+    height: 300px;
 }
 
 form{
   text-align: center;
   display: flex;
   justify-content: center;
-  margin: 0;
   padding: 5px;
   position: static;
 }
-#number{
+#number1, #number2{
 display: block;
 padding: 8px 20px;
 float: left;
 font-size: 16px;
 line-height: 10px;
+}
+#add, #reverse{
+  padding: 8px 20px;
+  margin: 5px;
 }
 #type{
 padding: 4px 5px;
@@ -113,4 +116,45 @@ table.unit-table {
 table a{
     text-decoration: none;
     color: black;
+}
+
+
+.conversion{
+ margin: 25px;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  height: 25px;
+  padding-top: 5px;
+  color: white;
+  background-color: darkslategrey;
+}
+.footer-user{
+  margin: -2px 8px 0 0;
+  padding-left: 10px;
+  font-size: 12px;
+}
+.footer-nav{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 10px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.footer-item{
+  margin: 0 20px;
+    padding: 0;
+    font-size: 12px;
+    line-height: 20px;
+    opacity: 0.6;
+}
+.footer-item:hover{
+  opacity: 1;
 }

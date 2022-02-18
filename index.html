@@ -20,34 +20,38 @@
             <p>Type a value in the unit of your field to convert the value to your other unit of choice:</p>
 
             <main>
-                <form>
-                    <input type="text" placeholder="Number" id="number1"/>
-                    <select id="input">
-                        <option value="mi">Miles</option>
-                        <option value="km">Kilometers</option>
-                        <option value="m">Meters</option>
-                        <option value="ft" selected>Feet</option>
-                        <option value="in">Inches</option>
-                        <option value="cm">Centimeters</option>
-                        <option value="yd">Yards</option>
-                        <option value="mm">Milometers</option>
-                    </select>
+                <div class="conversion">
+                    <form>
+                        <input type="text" placeholder="Number" id="number1"/>
+                        <select id="input">
+                            <option value="mi" selected>Miles</option>
+                            <option value="km">Kilometers</option>
+                            <option value="m">Meters</option>
+                            <option value="ft">Feet</option>
+                            <option value="in">Inches</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="yd">Yards</option>
+                            <option value="mm">Milometers</option>
+                        </select>
 
-                </form>
-                <button id="add">Convert</button>
-                <form>
-                    <input type="text" placeholder="Number" id="number2" maxlength="4"/>
-                    <select id="output">
-                        <option value="mi">Miles</option>
-                        <option value="km">Kilometers</option>
-                        <option value="m">Meters</option>
-                        <option value="ft" selected>Feet</option>
-                        <option value="in">Inches</option>
-                        <option value="cm">Centimeters</option>
-                        <option value="yd">Yards</option>
-                        <option value="mm">Milometers</option>
-                    </select>
-                </form>
+                    </form>
+                    <button id="add">Convert</button>
+                    <button id="reverse">Vice Versa</button>
+                    <form>
+                        <input type="text" placeholder="Number" id="number2" maxlength="4"/>
+                        <select id="output">
+                            <option value="mi">Miles</option>
+                            <option value="km" selected>Kilometers</option>
+                            <option value="m">Meters</option>
+                            <option value="ft" >Feet</option>
+                            <option value="in">Inches</option>
+                            <option value="cm">Centimeters</option>
+                            <option value="yd">Yards</option>
+                            <option value="mm">Milometers</option>
+                        </select>
+                    </form>
+                </div>
+
             </main>
         </div>
         <div class="bottom-container">
@@ -69,7 +73,7 @@
                             </tr>
                             <tr>
                                 <td><a href="" class="convert-item">mm to in</a></td>
-                                <td>mm * 0.039370</td>
+                                <td>mm / 25.4</td>
                             </tr>
                             <tr>
                                 <td>m to ft</td>
@@ -145,8 +149,17 @@
                 </div>
             </div>
         </div>
-    </div>
 
+    </div>
+    <footer>
+        <div class="footer-user">
+            Created by Crystal Chavez
+        </div>
+        <div class="footer-nav">
+                <a href="https://www.linkedin.com/in/cchavez99/" target="_blank" class="footer-item">LinkedIn</a>
+                <a href="https://github.com/crystalchavez99" target="_blank" class="footer-item">Github</a>
+        </div>
+    </footer>
 </body>
 
 </html>
