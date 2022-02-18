@@ -44,7 +44,29 @@ main label,input{
 
 main{
     background-color: gray;
-    display: flex;
+    display: block;
+    border: 1px solid black;
+    padding: 0 70px;
+    margin-bottom: 86px;
+}
+
+form{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 5px;
+  position: static;
+}
+#number{
+display: block;
+padding: 8px 20px;
+float: left;
+font-size: 16px;
+line-height: 10px;
+}
+#type{
+padding: 4px 5px;
 }
 .list{
     display: flex;
